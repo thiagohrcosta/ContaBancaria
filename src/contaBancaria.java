@@ -5,14 +5,12 @@ public class contaBancaria {
 	private double valorDeposito;
 	public String nomeTitular;
 	
-	
+
 	public contaBancaria(int conta, double valorDeposito, String nomeTitular) {
-		super();
 		this.conta = conta;
 		this.valorDeposito = valorDeposito;
 		this.nomeTitular = nomeTitular;
 	}
-
 
 	public int getConta() {
 		return conta;
@@ -33,6 +31,8 @@ public class contaBancaria {
 		this.valorDeposito = valorDeposito;
 	}
 	
-	
+	public void depositarDinheiro(double valorDeposito) {
+		this.valorDeposito = this.valorDeposito + valorDeposito;
+	}
 
 }
